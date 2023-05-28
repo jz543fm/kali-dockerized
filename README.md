@@ -1,6 +1,6 @@
 # Dockerized Kali Linux and Ubuntu 20.04
 
-Dockerized Kali Linux and Ubuntu 20.04 for bug bounty/pentesting and so oncd 
+Dockerized Kali Linux and Ubuntu 20.04 for bug bounty/pentesting and so on... 
 
 docker-compose.yaml version `3.8`
 
@@ -58,7 +58,7 @@ docker system prune
 docker image prune
 ```
 
-### Run Kali Docker SystemD
+### Run Kali Linux in Docker with SystemD in container
 
 Use it in one Dockerfile for Kali and build up images via `bash script` or `docker-compose.yaml`
 
