@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+
+  kali:
+    build:
+      dockerfile: Dockerfile
+      context: ./kali
+    #image: 'kalilinux/kali-rolling'
+    container_name: kali
+    tty: true
+    restart: always
+    stdin_open: true
+    ports:
+    - 127.0.0.1:85:8085
+
+  ubuntu:
+    build:
+      dockerfile: Dockerfile
+      context: ./ubuntu
+    #image: 'ubuntu:20.04'
+    container_name: ubuntu
+    tty: true
+    restart: always
+    stdin_open: true
+    ports:
+    - 127.0.0.1:86:8086
