@@ -2,8 +2,6 @@
 
 Dockerized Kali Linux and Ubuntu 20.04 for bug bounty/pentesting and so on... 
 
-docker-compose.yaml version `3.8`
-
 I am using official Kali Linux Docker image **kalilinux/kali-rolling**, also this page describe **Official Kali Linux Docker Images** [Official](https://www.kali.org/docs/containers/official-kalilinux-docker-images/)
 
 ## TODO
@@ -14,8 +12,7 @@ I am using official Kali Linux Docker image **kalilinux/kali-rolling**, also thi
 
 ## Installing docker compose
 
-
-docker-compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2!
+docker-compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2! Used version of `docker-compose.yaml` is `3.8`
 
 ```bash
 mkdir -p ~/.docker/cli-plugins/
