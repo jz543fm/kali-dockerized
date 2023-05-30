@@ -6,6 +6,25 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 ## Installation
 
+#### Installing Trivy - Docker Vuln. scanner
+
+Trivy installation for Docker Image vulnerabilities:
+
+If you are not using Debian/Ubuntu, read [docs](https://aquasecurity.github.io/trivy/v0.18.3/installation/)
+
+If you are using Debian/Ubuntu:
+
+```bash
+wget https://github.com/aquasecurity/trivy/releases/download/v0.18.3/trivy_0.18.3_Linux-64bit.deb
+sudo dpkg -i trivy_0.18.3_Linux-64bit.deb
+```
+
+Trivy usage:
+
+```bash
+trivy image <image>
+```
+
 ### Kali Linux dockerized
 
 #### Installing docker compose
