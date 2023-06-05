@@ -17,7 +17,7 @@ DIVE_VERSION=0.10.0;  curl -sSLO https://github.com/wagoodman/dive/releases/down
 if you want to build your image then jump straight into analyzing it:
 
 ```bash
-dive build -t kali .
+dive build -t kali . -f Dockerfile_systemd
 ```
 
 #### Installing Trivy - Docker Vuln. scanner
