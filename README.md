@@ -6,6 +6,20 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 ## Installation
 
+#### Installing Dive - Tool for exploring Docker Image, layer, contents to shrink image
+
+One liner by specific version: 
+
+```bash
+DIVE_VERSION=0.10.0;  curl -sSLO https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb && sudo dpkg -i dive_${DIVE_VERSION}_linux_amd64.deb
+```
+
+if you want to build your image then jump straight into analyzing it:
+
+```bash
+dive build -t kali .
+```
+
 #### Installing Trivy - Docker Vuln. scanner
 
 Trivy installation for Docker Image vulnerabilities:
@@ -111,3 +125,31 @@ docker exec -it -u root kali bash #exec into kali container
 ### TODO
 
 1. Install Starship + add there my [starship.toml](https://github.com/jz543fm/starship-conf)
+
+### TODO Kali Packages
+
+OSINT:
+
+1. [The Harvester](https://github.com/laramies/theHarvester)
+
+2. [sn0int](https://github.com/kpcyrd/sn0int)
+
+3. [blackbird](https://github.com/p1ngul1n0/blackbird)
+
+K8s Scanner:
+
+1. [Kube-Hunter](https://github.com/aquasecurity/kube-hunter)
+
+Nmap-Scan-Scripts:
+
+1. [nmap-scan-scripts](https://github.com/topics/nmap-scan-script)
+
+Application Mapper:
+
+1. [amap](https://www.kali.org/tools/amap/)
+
+XSS:
+
+1. [XSSRecon](https://github.com/Ak-wa/XSSRecon)
+
+2. [XSSer](https://gitlab.com/kalilinux/packages/xsser)

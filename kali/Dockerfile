@@ -9,6 +9,14 @@ RUN apt-get update; apt-get install -y -q kali-linux-headless
 
 RUN apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmon htop
 
+#Additional from TODO
+
+RUN DEBIAN_FRONTEND=noninteractive apt -y install amap xsser
+
+#Additional packages with git clone 
+
+RUN git clone https://github.com/Ak-wa/XSSRecon; 
+
 # Install dependencies
 
 RUN apt -y install python3-pip npm nodejs golang
