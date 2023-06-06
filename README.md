@@ -91,6 +91,8 @@ docker image rmi -f <container_id> #remove image/s
 
 docker logs <service> #logs
 
+docker stats <image> #docker image statistics
+
 # PRUNE
 
 docker system prune 
