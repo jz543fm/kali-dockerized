@@ -24,3 +24,17 @@ services:
     stdin_open: true
     ports:
     - 127.0.0.1:86:8086
+
+  kali_systemd_2:
+    build:
+      dockerfile: Dockerfile_systemd
+      context: ./kali
+    #image: 'kalilinux/kali-rolling'
+    container_name: kali_systemd_2
+    tty: true
+    restart: always
+    stdin_open: true
+    privileged: true   # Add the privileged option
+    working_dir: /usr  # Add the working directory option
+    ports:
+      - 127.0.0.1:87:8087

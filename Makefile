@@ -14,4 +14,16 @@ kali-scan:
 # Docker stats for Kali Linux Docker image
 
 kali-stats:
-	docker stats -a kali-systemd
+	docker stats -a kali_systemd
+
+# Docker compose to build all services in docker-compose.yaml
+
+docker-build:
+
+	docker compose up -d --build
+
+# Docker compose run builed Kali Linux with systemd support from docker-compose.yaml
+
+docker-build-systemdr:
+
+	docker compose run --rm kali_systemd_2 bash
