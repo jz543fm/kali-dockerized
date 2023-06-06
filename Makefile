@@ -14,4 +14,4 @@ kali-scan:
 # Docker stats for Kali Linux Docker image
 
 kali-stats:
-	docker stats -a kali_systemd
+	docker stats -a kali-systemd
