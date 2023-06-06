@@ -30,8 +30,7 @@ If you are not using Debian/Ubuntu, read [docs](https://aquasecurity.github.io/t
 If you are using Debian/Ubuntu:
 
 ```bash
-wget https://github.com/aquasecurity/trivy/releases/download/v0.18.3/trivy_0.18.3_Linux-64bit.deb
-sudo dpkg -i trivy_0.18.3_Linux-64bit.deb
+TRIVY_VERSION=0.18.3; curl -sSLO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb && sudo dpkg -i trivy_${TRIVY_VERSION}_Linux-64bit.deb
 ```
 
 Trivy usage:
@@ -47,11 +46,7 @@ trivy image <image>
 docker-compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2! Used version of **docker-compose.yaml** is **3.8**
 
 ```bash
-mkdir -p ~/.docker/cli-plugins/
-
-curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
-
-chmod +x ~/.docker/cli-plugins/docker-compose #permission
+mkdir -p ~/.docker/cli-plugins/; DOCKER_COMPOSE=2.18.1; curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE}/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose; chmod +x ~/.docker/cli-plugins/docker-compose #permission
 
 docker compose version #verify
 ```
