@@ -11,7 +11,7 @@ RUN apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmo
 
 #Additional from TODO
 
-RUN DEBIAN_FRONTEND=noninteractive apt -y install amap xsser
+RUN DEBIAN_FRONTEND=noninteractive apt -y install amap xsser beef-xss
 
 #Additional packages with git clone 
 

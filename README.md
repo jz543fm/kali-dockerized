@@ -177,12 +177,30 @@ Nmap-Scan-Scripts:
 
 1. [nmap-scan-scripts](https://github.com/topics/nmap-scan-script)
 
-Application Mapper:
+## Tools List
 
-1. [amap](https://www.kali.org/tools/amap/)
-
-XSS:
-
-1. [XSSRecon](https://github.com/Ak-wa/XSSRecon)
-
-2. [XSSer](https://gitlab.com/kalilinux/packages/xsser)
+|   Tools in Kali Linux                                             | Usage                                                              
+| ------------------------------------------------------------------|---------------------------------------------------------------------|
+|     [amap](https://www.kali.org/tools/amap/)                      |    Application Mapper                                               |
+|     [xsser](https://github.com/epsylon/xsser)                     |    Automation framework to detect XSS                               |
+|     [beef-xss](https://beefproject.com)                           |    Browser Exploitation Framework                                   |
+|     [XSSRecon](https://github.com/Ak-wa/XSSRecon)                 |    Reflected XSS Scanner                                            |
+|     [exploitdb](https://gitlab.com/kalilinux/packages/exploitdb)  |    Searchable Exploit Database archive                              |
+|     [mandb](https://man7.org/linux/man-pages/man8/mandb.8.html)   |    Updates man pages                                                |
+|     [dirb](https://www.kali.org/tools/dirb/)                      |    Web Content Scanner                                              |
+|     [nikto](https://www.kali.org/tools/nikto/)                    |    Pluggable web server and CGI scanner                             |
+|     [wpscan](https://www.kali.org/tools/wpscan/)                  |    Scanner for Wordpress security issues                            |
+|     [uniscan](https://www.kali.org/tools/uniscan/)                |    URL scanner for vuln. + enables directory and dynamic checks     |
+|     [apktool](https://www.kali.org/tools/apktool/)                |    Reverse engineering 3rd party, closed, binary Android apps       |
+|     [dex2jar](https://www.kali.org/tools/dex2jar/)                |    Dex-reader is designed to read the Dalvik Executable format      |
+|     [binwalk](https://www.kali.org/tools/binwalk/)                |    Searching a given binary image for embedded files or executable  |
+|     [nmap](https://www.kali.org/tools/nmap/)                      |    Network Mapper                                                   |
+|     [aircrack-ng](https://www.kali.org/tools/aircrack-ng/)        |    Complete suite of tools to assess WiFi network security          |
+|     [hydra](https://www.kali.org/tools/hydra/)                    |    Parallelized login cracker which supports numerous protocols     |
+|     [wireshark](https://www.kali.org/tools/wireshark/)            |    Network Protocol Analyzer                                        |
+|     [burpsuite](https://www.kali.org/tools/burpsuite/)            |    Integrated platform for performing security testing of web apps  |
+|     [john](https://www.kali.org/tools/john/)                      |    John The Ripper - Password Cracker                               |
+|     [responder](https://www.kali.org/tools/responder/)            |    Responder/MultiRelay, an LLMNR, NBT-NS and MDNS poisoner         |
+|     [crackmapexec](https://www.kali.org/tools/crackmapexec/)      |    Swiss army knife for pentesting Windows/Active Directory envs.   |
+|     [metasploit-framework](https://www.kali.org/tools/metasploit-framework/) | vulnerability research, exploit development, and the creation of custom security tools
+|     [sqlmap](https://www.kali.org/tools/sqlmap/)                  |    Detects and take advantage of SQL injection vulnerabilities in web applications
