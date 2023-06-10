@@ -8,7 +8,7 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 #### Installing Dive - Tool for exploring Docker Image, layer, contents to shrink image
 
-One liner by specific version: 
+One liner to install [Dive](https://github.com/wagoodman/dive) by specific version (Linux/Ubuntu):
 
 ```bash
 DIVE_VERSION=0.10.0;  curl -sSLO https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb && sudo dpkg -i dive_${DIVE_VERSION}_linux_amd64.deb
@@ -23,11 +23,11 @@ dive build -t kali . -f Dockerfile_systemd
 
 #### Installing Trivy - Docker Vuln. scanner
 
-Trivy installation for Docker Image vulnerabilities:
+[Trivy](https://trivy.dev) installation for Docker Image vulnerabilities:
 
 If you are not using Debian/Ubuntu, read [docs](https://aquasecurity.github.io/trivy/v0.18.3/installation/)
 
-If you are using Debian/Ubuntu:
+One liner to install [Trivy](https://trivy.dev) by specific version (Linux/Ubuntu):
 
 ```bash
 TRIVY_VERSION=0.18.3; curl -sSLO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb && sudo dpkg -i trivy_${TRIVY_VERSION}_Linux-64bit.deb
@@ -93,6 +93,41 @@ docker stats <image> #docker image statistics
 docker system prune 
 
 docker image prune
+```
+
+#### Development + Usage
+
+You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 20.04 in Docker (docker run, docker build or docker-compose.yaml usage or by Makefile), examples are below:
+
+```bash
+#Detached Kali Linux without systemd/journalctl support docker run
+
+ docker run -p 127.0.0.1:88:8088 --name kali -itd kalilinux/kali-rolling 
+ docker attach kali 
+
+#Docker compose usage
+
+docker-compose up -d --build;
+docker compose run -d --rm kali_systemd_2 bash #run Kali Linux with systemd detached
+docker exec -it -u root <kali_without_systemd> bash #docker exec to Kali container without systemd
+docker exec -it -u root <ubuntu> bash #docker exec to ubuntu container
+docker exec -it -u root <kali_with_systemd> bash #docker exec to Kali container with systemd
+
+#Detached Kali Linux with systemd/journalctl support docker run + docker build
+
+cd kali/
+docker build -t kali -f Dockerfile_systemd . #Dockerfile for support systemd in docker container
+docker run -it --rm --privileged --workdir /usr --name kali-systemd  kali /bin/bash #Docker build
+
+#Makefile
+#command explanation is in Makefile
+
+make build-run-plain
+make create-build-s
+make image-run-s
+make kali-scan
+make docker-c-build
+make docker-c-build-systemd
 ```
 
 #### Run Kali Linux in Docker with SystemD in container
