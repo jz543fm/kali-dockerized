@@ -95,7 +95,7 @@ docker system prune
 docker image prune
 ```
 
-#### Development + Usage
+#### Development v2 + Usage
 
 You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 20.04 in Docker (docker run, docker build or docker-compose.yaml usage or by Makefile), examples are below:
 
