@@ -107,7 +107,7 @@ You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 
 
 #Docker compose usage
 
-docker-compose up -d --build;
+docker compose up -d --build;
 docker compose run -d --rm kali_systemd_2 bash #run Kali Linux with systemd detached
 docker exec -it -u root <kali_without_systemd> bash #docker exec to Kali container without systemd
 docker exec -it -u root <ubuntu> bash #docker exec to ubuntu container
