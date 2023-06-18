@@ -9,7 +9,7 @@ create-build-s:
 
 # Run the Kali image in a container
 image-run-s:
-	docker run -it --rm --privileged --workdir /usr --name kali-systemd kali /bin/bash
+	docker run -it -p 87:8087 --rm --privileged --workdir /usr --name kali-systemd kali /bin/bash
 
 # Scan for vuln. in Kali Linux Docker image
 
