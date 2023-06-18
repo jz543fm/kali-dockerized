@@ -32,3 +32,9 @@ docker-c-build:
 docker-c-build-systemd:
 
 	docker-compose up -d --build; docker compose run --rm kali_systemd_2 bash
+
+# Docker pre built
+
+docker-p-b:
+
+	docker run -p 87:8087 --rm --privileged --workdir /usr --name kali_p -itd lostcauze7/kali-dockerized:latest; docker attach kali_p
