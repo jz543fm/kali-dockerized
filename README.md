@@ -88,8 +88,11 @@ docker logs <service> #logs
 
 docker stats <image> #docker image statistics
 
-# PRUNE
+# Docker stop all running images and remove them, then you can use docker prune 
 
+docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
+
+# PRUNE
 docker system prune 
 
 docker image prune
