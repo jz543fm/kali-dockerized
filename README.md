@@ -8,13 +8,14 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 There you can find pre build `Kali Linux with systemD Docker Image`
 
-[lostcauze7/kali-dockerized](https://hub.docker.com/repository/docker/lostcauze7/kali-dockerized/general)
+[lostcauze7/kali-dockerized](https://hub.docker.com/r/lostcauze7/kali-dockerized)
 
 If you want to use pre built `Kali Linux with systemD Docker Image` just use command bellow,
 **if you want to build locally, read the documentation!**
 
 ```bash
-make docker-p-b
+make docker-p-b #Makefile docker pre built Kali
+docker exec -it -u root kali_p bash #docker exec to the pre buil Kali Linux Docker container with systemD support
 ```
 
 ## Installation
