@@ -105,8 +105,8 @@ You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 
 ```bash
 #Detached Kali Linux without systemd/journalctl support docker run
 
- docker run -p 127.0.0.1:88:8088 --name kali -itd kalilinux/kali-rolling 
- docker attach kali 
+docker run -p 127.0.0.1:88:8088 --name kali -itd kalilinux/kali-rolling
+docker attach kali
 
 #Docker compose usage
 
