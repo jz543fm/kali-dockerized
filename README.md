@@ -224,3 +224,7 @@ Nmap-Scan-Scripts:
 |     [sqlmap](https://www.kali.org/tools/sqlmap/)                  |    Detects and take advantage of SQL injection vulnerabilities in web applications
 |     [set](https://www.kali.org/tools/set/)                        |    Social Engineering Toolkit                                       |
 |     [ncrack](https://www.kali.org/tools/ncrack/)                  |    High-speed network authentication cracking tool                  |
+|     [steghide](https://www.kali.org/tools/steghide/)                  |    Steganography program which hides bits of a data file                  |
+|     [yara](https://www.kali.org/tools/yara/)                  |    Can identify/classify malware samples                 |
+|     [whatweb](https://www.kali.org/tools/whatweb/)                  |    Identifies website                 |
+|     [whatmask](https://www.kali.org/tools/whatmask/)                  |     Network Admin Helper                 |
