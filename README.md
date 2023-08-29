@@ -229,3 +229,4 @@ Nmap-Scan-Scripts:
 |     [whatweb](https://www.kali.org/tools/whatweb/)                  |    Identifies website                 |
 |     [whatmask](https://www.kali.org/tools/whatmask/)                  |     Network Admin Helper                 |
 |     [wapiti](https://www.kali.org/tools/wapiti/)                  |    Allows you to audit the security of your web applications                 |
+|     [trufflehog](https://www.kali.org/tools/trufflehog/)                  |    Allows you to find secrets in git repositories                |
