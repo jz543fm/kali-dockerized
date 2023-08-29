@@ -40,9 +40,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt -y install kali-tools-top10 \
                                                 binwalk \
                                                 trufflehog \
                                                 steghide \
-						                        yara \
-						                        whatmask \
-						                        wapiti
+			                        yara \
+			                        whatmask \
+						wapiti
 
 COPY docker-entrypoint.sh /
 

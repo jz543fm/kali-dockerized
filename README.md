@@ -228,3 +228,4 @@ Nmap-Scan-Scripts:
 |     [yara](https://www.kali.org/tools/yara/)                  |    Can identify/classify malware samples                 |
 |     [whatweb](https://www.kali.org/tools/whatweb/)                  |    Identifies website                 |
 |     [whatmask](https://www.kali.org/tools/whatmask/)                  |     Network Admin Helper                 |
+|     [wapiti](https://www.kali.org/tools/wapiti/)                  |    Allows you to audit the security of your web applications                 |
