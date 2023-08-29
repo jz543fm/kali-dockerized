@@ -6,16 +6,16 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 ## Docker Hub
 
-There you can find pre build `Kali Linux with systemD Docker Image`
+There you can find pre build `Kali Linux with systemd Docker Image`
 
 [lostcauze7/kali-dockerized](https://hub.docker.com/r/lostcauze7/kali-dockerized)
 
-If you want to use pre built `Kali Linux with systemD Docker Image` just use command bellow,
+If you want to use pre built `Kali Linux with systemd Docker Image` just use command bellow,
 **if you want to build locally, read the documentation!**
 
 ```bash
 make docker-p-b #Makefile docker pre built Kali
-docker exec -it -u root kali_p bash #docker exec to the pre buil Kali Linux Docker container with systemD support
+docker exec -it -u root kali_p bash #docker exec to the pre buil Kali Linux Docker container with systemd support
 ```
 
 ## Installation
@@ -148,7 +148,7 @@ make docker-c-build-systemd
 make docker-p-b
 ```
 
-#### Run Kali Linux in Docker with SystemD in container
+#### Run Kali Linux in Docker with systemd in container
 
 Use it in one Dockerfile for Kali and build up images via bash script or docker-compose.yaml
 

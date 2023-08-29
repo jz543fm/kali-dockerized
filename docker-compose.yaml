@@ -31,7 +31,7 @@ services:
       dockerfile: Dockerfile_systemd
       context: ./kali
     #image: 'kalilinux/kali-rolling'
-    # SystemD image prebuilt
+    # systemd image prebuilt
     #image: 'lostcauze7/kali-dockerized:latest'
     container_name: kali_systemd_2
     tty: true
