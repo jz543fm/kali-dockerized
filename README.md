@@ -196,37 +196,48 @@ Nmap-Scan-Scripts:
 1. [nmap-scan-scripts](https://github.com/topics/nmap-scan-script)
 
 ## Tools List
-
-|   Tools in Kali Linux                                             | Usage                                                              
+ 
+ |   Tools in Kali Linux                                             | Usage                                                              
 | ------------------------------------------------------------------|---------------------------------------------------------------------|
-|     [amap](https://www.kali.org/tools/amap/)                      |    Application Mapper                                               |
-|     [xsser](https://github.com/epsylon/xsser)                     |    Automation framework to detect XSS                               |
-|     [beef-xss](https://beefproject.com)                           |    Browser Exploitation Framework                                   |
-|     [XSSRecon](https://github.com/Ak-wa/XSSRecon)                 |    Reflected XSS Scanner                                            |
-|     [exploitdb](https://gitlab.com/kalilinux/packages/exploitdb)  |    Searchable Exploit Database archive                              |
-|     [mandb](https://man7.org/linux/man-pages/man8/mandb.8.html)   |    Updates man pages                                                |
-|     [dirb](https://www.kali.org/tools/dirb/)                      |    Web Content Scanner                                              |
-|     [nikto](https://www.kali.org/tools/nikto/)                    |    Pluggable web server and CGI scanner                             |
-|     [wpscan](https://www.kali.org/tools/wpscan/)                  |    Scanner for Wordpress security issues                            |
-|     [uniscan](https://www.kali.org/tools/uniscan/)                |    URL scanner for vuln. + enables directory and dynamic checks     |
-|     [apktool](https://www.kali.org/tools/apktool/)                |    Reverse engineering 3rd party, closed, binary Android apps       |
-|     [dex2jar](https://www.kali.org/tools/dex2jar/)                |    Dex-reader is designed to read the Dalvik Executable format      |
-|     [binwalk](https://www.kali.org/tools/binwalk/)                |    Searching a given binary image for embedded files or executable  |
-|     [nmap](https://www.kali.org/tools/nmap/)                      |    Network Mapper                                                   |
 |     [aircrack-ng](https://www.kali.org/tools/aircrack-ng/)        |    Complete suite of tools to assess WiFi network security          |
-|     [hydra](https://www.kali.org/tools/hydra/)                    |    Parallelized login cracker which supports numerous protocols     |
-|     [wireshark](https://www.kali.org/tools/wireshark/)            |    Network Protocol Analyzer                                        |
+|     [amap](https://www.kali.org/tools/amap/)                      |    Application Mapper                                               |
+|     [apktool](https://www.kali.org/tools/apktool/)                |    Reverse engineering 3rd party, closed, binary Android apps       |
+|     [beef-xss](https://beefproject.com)                           |    Browser Exploitation Framework                                   |
+|     [binwalk](https://www.kali.org/tools/binwalk/)                |    Searching a given binary image for embedded files or executable  |
+|     [blackbird](https://github.com/p1ngul1n0/blackbird/)                  |    OSINT
 |     [burpsuite](https://www.kali.org/tools/burpsuite/)            |    Integrated platform for performing security testing of web apps  |
-|     [john](https://www.kali.org/tools/john/)                      |    John The Ripper - Password Cracker                               |
-|     [responder](https://www.kali.org/tools/responder/)            |    Responder/MultiRelay, an LLMNR, NBT-NS and MDNS poisoner         |
 |     [crackmapexec](https://www.kali.org/tools/crackmapexec/)      |    Swiss army knife for pentesting Windows/Active Directory envs.   |
+|     [cri-tools](https://www.kali.org/tools/cri-tools/)                  |     contains a series of debugging and validation tools for Kubelet CRI, which includes(critest,crictl)                 |
+|     [dex2jar](https://www.kali.org/tools/dex2jar/)                |    Dex-reader is designed to read the Dalvik Executable format      |
+|     [dirb](https://www.kali.org/tools/dirb/)                      |    Web Content Scanner                                              |
+|     [exploitdb](https://gitlab.com/kalilinux/packages/exploitdb)  |    Searchable Exploit Database archive                              |
+|     [hydra](https://www.kali.org/tools/hydra/)                    |    Parallelized login cracker which supports numerous protocols     |
+|     [john](https://www.kali.org/tools/john/)                      |    John The Ripper - Password Cracker                               |
+|     [kube-hunter](https://github.com/aquasecurity/kube-hunter)                  |    Hunts for weakness in K8s cluster/s
+|     [kubernetes-helm](https://www.kali.org/tools/kubernetes-helm/#helm)                  |    Tool for managing Helm charts
+|     [mandb](https://man7.org/linux/man-pages/man8/mandb.8.html)   |    Updates man pages                                                |
 |     [metasploit-framework](https://www.kali.org/tools/metasploit-framework/) | vulnerability research, exploit development, and the creation of custom security tools
-|     [sqlmap](https://www.kali.org/tools/sqlmap/)                  |    Detects and take advantage of SQL injection vulnerabilities in web applications
-|     [set](https://www.kali.org/tools/set/)                        |    Social Engineering Toolkit                                       |
 |     [ncrack](https://www.kali.org/tools/ncrack/)                  |    High-speed network authentication cracking tool                  |
-|     [steghide](https://www.kali.org/tools/steghide/)                  |    Steganography program which hides bits of a data file                  |
-|     [yara](https://www.kali.org/tools/yara/)                  |    Can identify/classify malware samples                 |
-|     [whatweb](https://www.kali.org/tools/whatweb/)                  |    Identifies website                 |
-|     [whatmask](https://www.kali.org/tools/whatmask/)                  |     Network Admin Helper                 |
+|     [nikto](https://www.kali.org/tools/nikto/)                    |    Pluggable web server and CGI scanner                             |
+|     [nmap](https://www.kali.org/tools/nmap/)                      |    Network Mapper                                                   |
+|     [responder](https://www.kali.org/tools/responder/)            |    Responder/MultiRelay, an LLMNR, NBT-NS and MDNS poisoner         |
+|     [set](https://www.kali.org/tools/set/)                        |    Social Engineering Toolkit                                       |
+|     [sqlmap](https://www.kali.org/tools/sqlmap/)                  |    Detects and take advantage of SQL injection vulnerabilities in web applications
+|     [steghide](https://www.kali.org/tools/steghide/)              |    Steganography program which hides bits of a data file                  |
+|     [the Harvester](https://www.kali.org/tools/theharvester/)                  |    Contains a tool for gathering subdomain names, e-mail addresses, virtual hosts, open ports/ banners, and employee names from different public sources (search engines, pgp key servers).                 |
+|     [trufflehog](https://www.kali.org/tools/trufflehog/)          |    Allows you to find secrets in git repositories                |
+|     [uniscan](https://www.kali.org/tools/uniscan/)                |    URL scanner for vuln. + enables directory and dynamic checks     |
 |     [wapiti](https://www.kali.org/tools/wapiti/)                  |    Allows you to audit the security of your web applications                 |
-|     [trufflehog](https://www.kali.org/tools/trufflehog/)                  |    Allows you to find secrets in git repositories                |
+|     [whatmask](https://www.kali.org/tools/whatmask/)              |     Network Admin Helper                 |
+|     [whatweb](https://www.kali.org/tools/whatweb/)                |    Identifies website                 |
+|     [wireshark](https://www.kali.org/tools/wireshark/)            |    Network Protocol Analyzer                                        |
+|     [wpscan](https://www.kali.org/tools/wpscan/)                  |    Scanner for Wordpress security issues                            |
+|     [xssRecon](https://github.com/Ak-wa/XSSRecon)                 |    Reflected XSS Scanner                                            |
+|     [xsser](https://github.com/epsylon/xsser)                     |    Automation framework to detect XSS                               |
+|     [yara](https://www.kali.org/tools/yara/)                  |    Can identify/classify malware samples                 |
+
+### Sort List
+
+```bash
+sort -t '[' -k 2,2 -i README.md > sorted.txt
+```
