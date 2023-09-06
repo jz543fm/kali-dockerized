@@ -177,23 +177,11 @@ docker exec -it -u root kali bash #exec into kali container
 
 1. Install Starship + add there my [starship.toml](https://github.com/jz543fm/starship-conf)
 
-### TODO Kali Packages
+### TODO Kali Tools
 
 OSINT:
 
-1. [The Harvester](https://github.com/laramies/theHarvester)
-
-2. [sn0int](https://github.com/kpcyrd/sn0int)
-
-3. [blackbird](https://github.com/p1ngul1n0/blackbird)
-
-K8s Scanner:
-
-1. [Kube-Hunter](https://github.com/aquasecurity/kube-hunter)
-
-Nmap-Scan-Scripts:
-
-1. [nmap-scan-scripts](https://github.com/topics/nmap-scan-script)
+1. [sn0int](https://github.com/kpcyrd/sn0int)
 
 ## Tools List
  
