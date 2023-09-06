@@ -20,7 +20,7 @@ docker exec -it -u root kali_p bash #docker exec to the pre buil Kali Linux Dock
 
 ## Installation
 
-#### Installing Dive - Tool for exploring Docker Image, layer, contents to shrink image
+### Installing Dive - Tool for exploring Docker Image, layer, contents to shrink image
 
 One liner to install [Dive](https://github.com/wagoodman/dive) by specific version (Linux/Ubuntu):
 
@@ -35,7 +35,7 @@ cd kali/
 dive build -t kali . -f Dockerfile_systemd
 ```
 
-#### Installing Trivy - Docker Vuln. scanner
+### Installing Trivy - Docker Vuln. scanner
 
 [Trivy](https://trivy.dev) installation for Docker Image vulnerabilities:
 
@@ -53,9 +53,7 @@ Trivy usage:
 trivy image <image>
 ```
 
-### Kali Linux dockerized
-
-#### Installing Docker + Docker compose
+### Installing Docker + Docker compose
 
 Install Docker engine by shell script or you can install you way:
 
@@ -67,7 +65,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-docker-compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2! Used version of **docker-compose.yaml** is **3.8**
+Docker compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2! Used version of **docker-compose.yaml** is **3.8**
 
 ```bash
 mkdir -p ~/.docker/cli-plugins/; DOCKER_COMPOSE=2.20.2; curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE}/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose; chmod +x ~/.docker/cli-plugins/docker-compose #permission
@@ -75,7 +73,7 @@ mkdir -p ~/.docker/cli-plugins/; DOCKER_COMPOSE=2.20.2; curl -SL https://github.
 docker compose version #verify
 ```
 
-#### Run Kali Linux in Docker
+### Run Kali Linux in Docker
 
 I am using docker-compose.yaml and Dockerfile, so to create docker service kali use, also I am using Docker BuildKit, so add content of  daemon.json to your /etc/docker/daemon.json and restart Docker systemd service sudo systemctl restart docker
 
@@ -87,7 +85,7 @@ If you want to run the docker-compose.yaml use the command:
 docker compose up -d --build #detached
 ```
 
-#### Development
+### Development
 
 Edit Dockerfiles for other services and you can develop with proper commands below
 
@@ -122,7 +120,7 @@ docker system prune
 docker image prune
 ```
 
-#### Development v2 + Usage
+### Development v2 + Usage
 
 You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 20.04 in Docker (docker run, docker build or docker-compose.yaml usage or by Makefile), examples are below:
 
@@ -158,7 +156,7 @@ make docker-c-build-systemd
 make docker-p-b
 ```
 
-#### Run Kali Linux in Docker with systemd in container
+### Run Kali Linux in Docker with systemd in container
 
 Use it in one Dockerfile for Kali and build up images via bash script or docker-compose.yaml
 
