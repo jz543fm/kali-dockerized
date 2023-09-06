@@ -25,7 +25,7 @@ docker exec -it -u root kali_p bash #docker exec to the pre buil Kali Linux Dock
 One liner to install [Dive](https://github.com/wagoodman/dive) by specific version (Linux/Ubuntu):
 
 ```bash
-DIVE_VERSION=0.10.0;  curl -sSLO https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb && sudo dpkg -i dive_${DIVE_VERSION}_linux_amd64.deb
+DIVE_VERSION=0.11.0;  curl -sSLO https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb && sudo dpkg -i dive_${DIVE_VERSION}_linux_amd64.deb
 ```
 
 if you want to build your image then jump straight into analyzing it:
@@ -44,7 +44,7 @@ If you are not using Debian/Ubuntu, read [docs](https://aquasecurity.github.io/t
 One liner to install [Trivy](https://trivy.dev) by specific version (Linux/Ubuntu):
 
 ```bash
-TRIVY_VERSION=0.18.3; curl -sSLO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb && sudo dpkg -i trivy_${TRIVY_VERSION}_Linux-64bit.deb
+TRIVY_VERSION=0.44.0; curl -sSLO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.deb && sudo dpkg -i trivy_${TRIVY_VERSION}_Linux-64bit.deb
 ```
 
 Trivy usage:
@@ -55,12 +55,22 @@ trivy image <image>
 
 ### Kali Linux dockerized
 
-#### Installing docker compose
+#### Installing Docker + Docker compose
+
+Install Docker engine by shell script or you can install you way:
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh; sudo sh get-docker.sh; rm -rf get-docker.sh
+
+#Permissions:
+sudo usermod -aG docker $USER
+newgrp docker
+```
 
 docker-compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2! Used version of **docker-compose.yaml** is **3.8**
 
 ```bash
-mkdir -p ~/.docker/cli-plugins/; DOCKER_COMPOSE=2.18.1; curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE}/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose; chmod +x ~/.docker/cli-plugins/docker-compose #permission
+mkdir -p ~/.docker/cli-plugins/; DOCKER_COMPOSE=2.20.2; curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE}/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose; chmod +x ~/.docker/cli-plugins/docker-compose #permission
 
 docker compose version #verify
 ```
