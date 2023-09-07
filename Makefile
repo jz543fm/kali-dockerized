@@ -33,7 +33,7 @@ docker-c-build-systemd:
 
 	docker-compose up -d --build; docker compose run --rm kali_systemd_2 bash
 
-# Docker pre built
+# Docker prebuilt
 
 docker-p-b:
 

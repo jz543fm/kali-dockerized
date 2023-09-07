@@ -2,27 +2,27 @@
 
 Dockerized Kali Linux + Ubuntu 20.04 for Bug Bounty, Penetration Testing, Security Research, Computer Forensics and Reverse Engineering
 
-I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-docker-images/) Kali Linux Docker image **kalilinux/kali-rolling**, also this page describe **Official Kali Linux Docker Images** 
+I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-docker-images/) Kali Linux Docker image **kalilinux/kali-rolling**, also this page describes **Official Kali Linux Docker Images** 
 
 ## Docker Hub
 
-There you can find pre build `Kali Linux with systemd Docker Image`
+There you can find prebuilt `Kali Linux with systemd Docker Image`
 
 [lostcauze7/kali-dockerized](https://hub.docker.com/r/lostcauze7/kali-dockerized)
 
-If you want to use pre built `Kali Linux with systemd Docker Image` just use command bellow,
+If you want to use prebuilt  `Kali Linux with systemd Docker Image` just use command bellow,
 **if you want to build locally, read the documentation!**
 
 ```bash
-make docker-p-b #Makefile docker pre built Kali
-docker exec -it -u root kali_p bash #docker exec to the pre buil Kali Linux Docker container with systemd support
+make docker-p-b #Makefile dockerprebuilt Kali
+docker exec -it -u root kali_p bash #docker exec to the prebuilt Kali Linux Docker container with systemd support
 ```
 
 ## Installation
 
 ### Installing Dive - Tool for exploring Docker Image, layer, contents to shrink image
 
-One liner to install [Dive](https://github.com/wagoodman/dive) by specific version (Linux/Ubuntu):
+One liner to install [Dive](https://github.com/wagoodman/dive) by specific version - Linux:
 
 ```bash
 DIVE_VERSION=0.11.0;  curl -sSLO https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb && sudo dpkg -i dive_${DIVE_VERSION}_linux_amd64.deb
@@ -55,7 +55,7 @@ trivy image <image>
 
 ### Installing Docker + Docker compose
 
-Install Docker engine by shell script or you can install you way:
+Install Docker engine by your way you or you can install it by shell script:
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh; sudo sh get-docker.sh; rm -rf get-docker.sh
@@ -65,7 +65,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-Docker compose installation (latest release), it is expected that you've installed docker and you're installing only docker compose v2! Used version of **docker-compose.yaml** is **3.8**
+Docker compose installation (latest release), it is expected you're using only docker compose v2! Used version of **docker-compose.yaml** is **3.8**
 
 ```bash
 mkdir -p ~/.docker/cli-plugins/; DOCKER_COMPOSE=2.20.2; curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE}/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose; chmod +x ~/.docker/cli-plugins/docker-compose #permission
