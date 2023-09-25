@@ -7,7 +7,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 
 RUN apt-get update; apt-get install -y -q kali-linux-headless
 
-RUN apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmon htop
+RUN apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmon htop tor
 
 #Additional from todo
 
@@ -56,5 +56,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt -y install kali-tools-top10 \
 RUN apt-get update;
 
 COPY docker-entrypoint.sh /
+
+COPY conf/proxychains.conf /etc/proxychains.conf
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
