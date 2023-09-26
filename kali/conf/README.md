@@ -1,6 +1,6 @@
 # Proxychains
 
-[Github](https://github.com/haad/proxychains)
+[Github proxychains-ng](https://github.com/rofl0r/proxychains-ng)
 
 In Kali Linux w/ systemd commmands to verify proxychains service:
 
