@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kali-linux-systemd
+  name: kali-deployment
 spec:
   replicas: 1
   selector:
@@ -21,6 +21,8 @@ spec:
           privileged: true
         workingDir: /usr
         command:
-        - "bash"
+        - "/bin/bash"
+        - "docker-entrypoint.sh"
+        - "sleep 10"
         stdin: true
         tty: true

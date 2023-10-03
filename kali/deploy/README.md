@@ -9,3 +9,31 @@ Deploy:
 ```bash
 kubectl apply -f deploy.yaml
 ```
+
+## Local cluster PoC (kind)
+
+Demonstrates local Kubernetes cluster deployment to test a Kali Linux deployment with the systemd support
+
+Firstly you need to create a local cluster, I recommend to use a [kind](https://kind.sigs.k8s.io), Kind [releases](https://github.com/kubernetes-sigs/kind/releases)
+
+```bash
+kind create cluster
+```
+
+Deploy a Kali Linux systemd deployment to your local Kubernetes cluster created via kind
+
+```bash
+kubectl apply -f deploy -n <namespace>
+```
+
+For deleting a local kubernetes cluster in kind you can use
+
+```bash
+kind delete cluster
+```
+
+Or
+
+```
+kind delete clusters <name>
+```
