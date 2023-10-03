@@ -23,6 +23,6 @@ spec:
         command:
         - "/bin/bash"
         - "docker-entrypoint.sh"
-        - "sleep 10"
+        - "echo"
         stdin: true
         tty: true
