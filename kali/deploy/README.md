@@ -34,6 +34,6 @@ kind delete cluster
 
 Or
 
-```
+```bash
 kind delete clusters <name>
 ```
