@@ -197,7 +197,12 @@ OSINT:
 | ------------------------------------------------------------------|---------------------------------------------------------------------|
 |     [aircrack-ng](https://www.kali.org/tools/aircrack-ng/)        |    Complete suite of tools to assess WiFi network security          |
 |     [amap](https://www.kali.org/tools/amap/)                      |    Application Mapper                                               |
+|     [amass](https://www.kali.org/tools/amass/)        |    Perform network mapping of attack surfaces and perform external asset discovery using open source information gathering and active reconnaissance techniques.          |
 |     [apktool](https://www.kali.org/tools/apktool/)                |    Reverse engineering 3rd party, closed, binary Android apps       |
+|     [arp-scan](https://www.kali.org/tools/arp-scan/)        |    ARP protocol to discover and fingerprint IP hosts on the local network. It is available for Linux and BSD under the GPL licence.          |
+|     [arjun](https://www.kali.org/tools/arjun/)        |    Can find query parameters for URL endpoints         |
+|     [arping](https://www.kali.org/tools/arping/)        |    Sends ARP and/or ICMP requests to the specified host and displays the replies. The host may be specified by its hostname, its IP address, or its MAC address.          |
+|     [axel](https://www.kali.org/tools/axel/)        |    Accelerate the downloading process by using multiple connections for one file, similar to DownThemAll and other famous programs. It can also use multiple mirrors for one download.          |
 |     [beef-xss](https://beefproject.com)                           |    Browser Exploitation Framework                                   |
 |     [binwalk](https://www.kali.org/tools/binwalk/)                |    Searching a given binary image for embedded files or executable  |
 |     [blackbird](https://github.com/p1ngul1n0/blackbird/)                  |    OSINT
