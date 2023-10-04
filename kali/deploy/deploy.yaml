@@ -22,7 +22,7 @@ spec:
         workingDir: /usr
         command:
         - "/bin/bash"
-        - "docker-entrypoint.sh"
+        - "/docker-entrypoint.sh"
         - "echo"
         stdin: true
         tty: true
