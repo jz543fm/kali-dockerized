@@ -52,5 +52,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt -y install kali-tools-top10 \
 						wapiti \
 						theharvester \
 						cri-tools \
-						kubernetes-helm
+						kubernetes-helm \
+                                                arjun
 RUN apt-get update;
