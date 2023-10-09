@@ -11,12 +11,11 @@ RUN apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmo
 
 #Additional from todo
 
-RUN DEBIAN_FRONTEND=noninteractive apt -y install amap xsser beef-xss set ncrack
+RUN apt -y install amap xsser beef-xss set ncrack
 
 # XSS-RECON
 
 RUN git clone https://github.com/Ak-wa/XSSRecon; 
-
 
 # Install dependencies
 
@@ -30,30 +29,30 @@ RUN git clone https://github.com/p1ngul1n0/blackbird; cd blackbird; pwd; pip ins
 # python blackbird.py
 RUN git clone https://github.com/aquasecurity/kube-hunter.git; cd kube-hunter; pip install kube-hunter;
 
-# package [kali-tools-top10] = aircrack-ng, hydra, nmap, wireshark, burpsuite, john, responder, crackmapexec, metasploit-framework, sqlmap
+# Common packages
 
-RUN DEBIAN_FRONTEND=noninteractive apt -y install kali-tools-top10 \
-                                                exploitdb \
-                                                man-db \
-                                                dirb \
-                                                nikto \
-                                                wpscan \
-                                                uniscan \
-                                                lsof \
-                                                apktool \
-                                                dex2jar \
-                                                ltrace \
-                                                strace \
-                                                binwalk \
-                                                trufflehog \
-                                                steghide \
-						yara \
-						whatmask \
-						wapiti \
-						theharvester \
-						cri-tools \
-						kubernetes-helm \
-                                                arjun
+RUN apt -y install kali-tools-top10 \
+                    exploitdb \
+                    man-db \
+                    dirb \
+                    nikto \
+                    wpscan \
+                    uniscan \
+                    lsof \
+                    apktool \
+                    dex2jar \
+                    ltrace \
+                    strace \
+                    binwalk \
+                    trufflehog \
+                    steghide \
+		    yara \
+		    whatmask \
+		    wapiti \
+		    theharvester \
+		    cri-tools \
+		    kubernetes-helm \
+                    arjun
 RUN apt-get update;
 
 COPY docker-entrypoint.sh /
