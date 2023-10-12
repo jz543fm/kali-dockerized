@@ -55,3 +55,5 @@ RUN apt -y install kali-tools-top10 \
                     arjun
 
 RUN apt-get update;
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
