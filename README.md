@@ -77,8 +77,6 @@ docker compose version #verify
 
 I am using docker-compose.yaml and Dockerfile, so to create docker service kali use, also I am using Docker BuildKit, so if you want to build this repository with `Docker BuildKit` you need to run script `sudo script.sh`, script checks if the `/etc/docker/daemon.json` exists or not, if not it creates a one with default config for BuildKit, if file exists it creates a default config, if there is not any daemon.json then it creates a new `/etc/docker/daemon.json` and then it restarts Linux `docker.service` with systemctl to apply a changes for Docker Engine 
 
-Builded docker images, builded docker image for Kali Linux is big ~9.44GB and builded docker image for Ubuntu-20.04 is big ~134MB
-
 If you want to run the docker-compose.yaml use the command: 
 
 ```bash
@@ -154,6 +152,8 @@ make kali-scan
 make docker-c-build
 make docker-c-build-systemd
 make docker-p-b
+make cc
+make dc
 ```
 
 ### Run Kali Linux in Docker with systemd in container

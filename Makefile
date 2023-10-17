@@ -38,3 +38,13 @@ docker-c-build-systemd:
 docker-p-b:
 
 	docker run -p 87:8087 --rm --privileged --workdir /usr --name kali_p -itd lostcauze7/kali-dockerized:latest; docker attach kali_p
+
+# Creates Kind cluster (Kubernetes in Docker) with the config file in kali/deploy/config.yaml
+
+cc:
+	kind create cluster --config=kali/deploy/config.yaml
+
+# Deletes Kind cluster
+
+dc:
+	kind delete cluster
