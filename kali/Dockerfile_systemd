@@ -9,9 +9,9 @@ RUN apt-get update; apt-get install -y -q kali-linux-headless
 
 RUN apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmon htop tor
 
-#Additional from todo
+#Sets WORKDIR to /usr
 
-RUN apt -y install amap xsser beef-xss set ncrack
+WORKDIR /usr
 
 # XSS-RECON
 
@@ -32,27 +32,32 @@ RUN git clone https://github.com/aquasecurity/kube-hunter.git; cd kube-hunter; p
 # Common packages
 
 RUN apt -y install kali-tools-top10 \
-                    exploitdb \
-                    man-db \
-                    dirb \
-                    nikto \
-                    wpscan \
-                    uniscan \
-                    lsof \
-                    apktool \
-                    dex2jar \
-                    ltrace \
-                    strace \
-                    binwalk \
-                    trufflehog \
-                    steghide \
-		    yara \
-		    whatmask \
-		    wapiti \
-		    theharvester \
-		    cri-tools \
-		    kubernetes-helm \
-                    arjun
+    amap \
+    apktool \
+    arjun \
+    beef-xss \
+    binwalk \
+    cri-tools \
+    dex2jar \
+    dirb \
+    exploitdb \
+    kubernetes-helm \
+    lsof \
+    ltrace \
+    man-db \
+    nikto \
+    set \
+    steghide \
+    strace \
+    theharvester \
+    trufflehog \
+    uniscan \
+    wapiti \
+    wpscan \
+    xsser \
+    yara \
+    whatmask
+
 RUN apt-get update;
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
