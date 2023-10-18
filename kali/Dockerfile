@@ -31,8 +31,7 @@ RUN git clone https://github.com/aquasecurity/kube-hunter.git; cd kube-hunter; p
 
 # Common packages
 
-RUN apt -y install kali-tools-top10 \
-    amap \
+RUN apt -y install amap \
     apktool \
     arjun \
     beef-xss \
@@ -41,6 +40,7 @@ RUN apt -y install kali-tools-top10 \
     dex2jar \
     dirb \
     exploitdb \
+    kali-tools-top10 \
     kubernetes-helm \
     lsof \
     ltrace \
@@ -53,10 +53,10 @@ RUN apt -y install kali-tools-top10 \
     trufflehog \
     uniscan \
     wapiti \
+    whatmask \
     wpscan \
     xsser \
-    yara \
-    whatmask
+    yara
 
 RUN apt-get update;
 
