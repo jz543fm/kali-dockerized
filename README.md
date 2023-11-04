@@ -185,12 +185,6 @@ docker exec -it -u root kali bash #exec into kali container
 
 1. Install Starship + add there my [starship.toml](https://github.com/jz543fm/starship-conf)
 
-### TODO Kali Tools
-
-OSINT:
-
-1. [sn0int](https://github.com/kpcyrd/sn0int)
-
 ## Tools List
  
  |   Tools in Kali Linux                                             | Usage                                                              
@@ -216,6 +210,7 @@ OSINT:
 |     [john](https://www.kali.org/tools/john/)                      |    John The Ripper - Password Cracker                               |
 |     [kube-hunter](https://github.com/aquasecurity/kube-hunter)                  |    Hunts for weakness in K8s cluster/s
 |     [kubernetes-helm](https://www.kali.org/tools/kubernetes-helm/#helm)                  |    Tool for managing Helm charts
+|     [maigret](https://github.com/soxoj/maigret)   |    OSINT    
 |     [mandb](https://man7.org/linux/man-pages/man8/mandb.8.html)   |    Updates man pages                                                |
 |     [metasploit-framework](https://www.kali.org/tools/metasploit-framework/) | vulnerability research, exploit development, and the creation of custom security tools
 |     [ncrack](https://www.kali.org/tools/ncrack/)                  |    High-speed network authentication cracking tool                  |
@@ -223,6 +218,7 @@ OSINT:
 |     [nmap](https://www.kali.org/tools/nmap/)                      |    Network Mapper                                                   |
 |     [responder](https://www.kali.org/tools/responder/)            |    Responder/MultiRelay, an LLMNR, NBT-NS and MDNS poisoner         |
 |     [set](https://www.kali.org/tools/set/)                        |    Social Engineering Toolkit                                       |
+|     [sherlock](https://github.com/sherlock-project/sherlock)      |    OSINT                                          |
 |     [sqlmap](https://www.kali.org/tools/sqlmap/)                  |    Detects and take advantage of SQL injection vulnerabilities in web applications
 |     [steghide](https://www.kali.org/tools/steghide/)              |    Steganography program which hides bits of a data file                  |
 |     [the Harvester](https://www.kali.org/tools/theharvester/)                  |    Contains a tool for gathering subdomain names, e-mail addresses, virtual hosts, open ports/ banners, and employee names from different public sources (search engines, pgp key servers).                 |
