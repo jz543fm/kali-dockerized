@@ -4,7 +4,7 @@ build:
 
 exec:
 
-	docker run -it -u root kali_s:latest bash
+	docker run -it -p 87:8087 --rm --privileged --workdir /usr --name kali-systemd kali_s:latest bash
 
 tag:
 
