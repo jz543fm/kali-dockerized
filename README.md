@@ -1,6 +1,6 @@
-# Dockerized Kali Linux and Ubuntu 20.04
+# Dockerized Kali Linux and Ubuntu 22.04
 
-Dockerized Kali Linux + Ubuntu 20.04 for Bug Bounty, Penetration Testing, Security Research, Computer Forensics and Reverse Engineering
+Dockerized Kali Linux + Ubuntu 22.04 for Bug Bounty, Penetration Testing, Security Research, Computer Forensics and Reverse Engineering
 
 I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-docker-images/) Kali Linux Docker image **kalilinux/kali-rolling**, also this page describes **Official Kali Linux Docker Images** 
 
@@ -120,7 +120,7 @@ docker image prune
 
 ### Development v2 + Usage
 
-You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 20.04 in Docker (docker run, docker build or docker-compose.yaml usage or by Makefile), examples are below:
+You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 22.04 in Docker (docker run, docker build or docker-compose.yaml usage or by Makefile), examples are below:
 
 ```bash
 #Detached Kali Linux without systemd/journalctl support docker run
