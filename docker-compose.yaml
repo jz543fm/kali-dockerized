@@ -18,7 +18,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./ubuntu
-    #image: 'ubuntu:20.04'
+    #image: 'ubuntu:latest'
     container_name: ubuntu
     tty: true
     restart: always
