@@ -1,7 +1,7 @@
 # Build and run the Kali Linux in Docker without systemd 
 
 build-run-plain:
-	docker run -p 127.0.0.1:88:8088 --name kali -itd kalilinux/kali-rolling; docker attach kali 
+	docker run -p 127.0.0.1:88:8088 --network host --name kali -itd kalilinux/kali-rolling; docker attach kali 
 
 # Build the Kali image with systemd support
 create-build-s:
@@ -9,7 +9,7 @@ create-build-s:
 
 # Run the Kali image in a container
 image-run-s:
-	docker run -it -p 87:8087 --rm --privileged --workdir /usr --name kali-systemd kali /bin/bash
+	docker run -it -p 87:8087 --network host --rm --privileged --workdir /usr --name kali-systemd kali /bin/bash
 
 # Scan for vuln. in Kali Linux Docker image
 
@@ -37,7 +37,7 @@ docker-c-build-systemd:
 
 docker-p-b:
 
-	docker run -p 87:8087 --rm --privileged --workdir /usr --name kali_p -itd lostcauze7/kali-dockerized:latest; docker attach kali_p
+	docker run -p 87:8087 --network host --rm --privileged --workdir /usr --name kali_p -itd lostcauze7/kali-dockerized:latest; docker attach kali_p
 
 # Creates Kind cluster (Kubernetes in Docker) with the config file in kali/deploy/config.yaml
 

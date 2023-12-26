@@ -10,6 +10,7 @@ services:
     tty: true
     restart: always
     privileged: true   # Add the privileged option, SYS_ADMIN is limited, where privileged has full access
+    network_mode: host
     stdin_open: true
     ports:
     - 127.0.0.1:8085:8085
@@ -20,6 +21,8 @@ services:
       context: ./ubuntu
     #image: 'ubuntu:latest'
     container_name: ubuntu
+    privileged: true
+    network_mode: host
     tty: true
     restart: always
     stdin_open: true
@@ -34,6 +37,7 @@ services:
     # systemd image prebuilt
     #image: 'lostcauze7/kali-dockerized:latest'
     container_name: kali_systemd_2
+    network_mode: host
     tty: true
     restart: always
     stdin_open: true
