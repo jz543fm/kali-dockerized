@@ -4,6 +4,10 @@ Dockerized Kali Linux + Ubuntu 22.04 for Bug Bounty, Penetration Testing, Securi
 
 I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-docker-images/) Kali Linux Docker image **kalilinux/kali-rolling**, also this page describes **Official Kali Linux Docker Images** 
 
+***!!! I am using Docker host network driver, please remember that: The host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac, Docker Desktop for Windows, or Docker EE for Windows Server !!!, the usage of the host network driver is to optimize performance or to use that in a situation where container needs to handle a wide large range of ports***
+
+***If you want to run this project on the Mac, Windows, Windows server please remove from from all commands --network host!!!***
+
 ## Docker Hub
 
 There you can find prebuilt `Kali Linux with systemd Docker Image`
