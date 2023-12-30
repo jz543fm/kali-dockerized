@@ -45,3 +45,9 @@ Afterwards you can use proxychain:
 proxychains -f /etc/proxychains.conf curl <target>
 proxychains -f <other_proxy_chain_conf> curl <target>
 ```
+
+Get IP:
+
+```bash
+proxychains -f /etc/proxychains.conf curl https://ipinfo.io/ip
+```
