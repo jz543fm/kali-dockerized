@@ -23,6 +23,8 @@ spec:
         command:
         - "/bin/bash"
         - "/docker-entrypoint.sh"
-        - "echo"
+        - "tail"
+        - "-f"
+        - "/dev/null"
         stdin: true
         tty: true
