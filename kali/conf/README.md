@@ -1,4 +1,4 @@
-# Proxychains
+# TOR + Proxychains
 
 [Github proxychains-ng](https://github.com/rofl0r/proxychains-ng)
 
@@ -46,8 +46,44 @@ proxychains -f /etc/proxychains.conf curl <target>
 proxychains -f <other_proxy_chain_conf> curl <target>
 ```
 
-Get IP:
+Get IPs (3 methods):
 
 ```bash
 proxychains -f /etc/proxychains.conf curl https://ipinfo.io/ip
+proxychains -f /etc/proxychains.conf wget -qO- https://api.ipify.org
+proxychains -f /etc/proxychains.conf curl -s https://ifconfig.me
+```
+
+## How to configure TOR with bridges
+
+What is a [bridge?](https://support.torproject.org/censorship/censorship-7/)
+
+Something about [Obsfproxy](https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt)
+
+I've found this [repo](https://github.com/devshashtag/TorBridge) but it CLI it does not work due to X Display!!!
+Actually I've tried it manually:
+
+Install `obfs4proxy`:
+
+```bash
+apt install obfs4proxy
+```
+
+Open in your browser URL `https://bridges.torproject.org/` and get bridges (select from options if u need plugable transport or the usage of IPv4 or IPv6) then it generates CAPTCHA after u success in CAPTCHA it will provide bridges
+
+Edit `/etc/tor/torcc` and add this line, where last lines should be ur bridges:
+
+```bash
+UseBridges 1 
+ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+Bridge obfs4 50.39.226.171:47368 93BBD8F80D5F5A8A55829A3168278327BABC14D7 cert=e7kfc/GAUTzv6OEu/a9zQnzGQu9dzhs4jZSmKCXYCaOVZUf5vci2KKilPzR6pUKiiO9hNA iat-mode=0
+# This above is just example
+```
+
+Restart tor service:
+
+```bash
+service tor restart
+# Check the logs for proper error
+journalctl -exft Tor
 ```
