@@ -2,7 +2,7 @@
 
 [Github proxychains-ng](https://github.com/rofl0r/proxychains-ng)
 
-In Kali Linux w/ systemd commmands to play with proxychains service:
+In Kali Linux w/ systemd commmands to play with tor service:
 
 ```bash
 systemctl enable tor.service
