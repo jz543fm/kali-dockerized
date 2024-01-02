@@ -127,7 +127,7 @@ docker image prune
 You can use multiple options to run Kali Linux in Docker or Kali Linux + Ubuntu 22.04 in Docker (docker run, docker build or docker-compose.yaml usage or by Makefile), examples are below:
 
 ```bash
-#Detached Kali Linux without systemd/journalctl support docker run
+#Detached Kali Linux without systemd support docker run
 
 docker run -p 127.0.0.1:88:8088 --name kali -itd kalilinux/kali-rolling
 docker attach kali
@@ -140,7 +140,7 @@ docker exec -it -u root <kali_without_systemd> bash #docker exec to Kali contain
 docker exec -it -u root <ubuntu> bash #docker exec to ubuntu container
 docker exec -it -u root <kali_with_systemd> bash #docker exec to Kali container with systemd
 
-#Detached Kali Linux with systemd/journalctl support docker run + docker build
+#Detached Kali Linux with systemd support docker run + docker build
 
 cd kali/
 docker build -t kali -f Dockerfile_systemd . #Dockerfile for support systemd in docker container
