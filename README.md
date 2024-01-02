@@ -22,6 +22,24 @@ make docker-p-b #Makefile dockerprebuilt Kali
 docker exec -it -u root kali_p bash #docker exec to the prebuilt Kali Linux Docker container with systemd support
 ```
 
+## Deployment for Kubernetes
+
+Local cluster with [Kind](http://kind.sigs.k8s.io) - (K8s in Docker):
+
+```bash
+# Creates kind cluster, 1 master + 2 worker nodes
+make cc
+# Deletes kind cluster
+make dc
+```
+
+```bash
+# Kali Linux with systemd
+kubectl apply -f kali/deploy/deploy.yaml
+# Ubuntu
+kubectl apply -f ubuntu/deploy/deploy.yaml
+```
+
 ## Installation
 
 ### Installing Dive - Tool for exploring Docker Image, layer, contents to shrink image
