@@ -59,10 +59,6 @@ RUN apt -y install python3-pip npm nodejs golang
 # python blackbird.py
 RUN git clone https://github.com/p1ngul1n0/blackbird; cd blackbird; pwd; pip install -r requirements.txt;
 
-# Kube-hunter
-# for usage: kube-hunter
-RUN git clone https://github.com/aquasecurity/kube-hunter.git; cd kube-hunter; pip install kube-hunter;
-
 # Maigret
 # for usage: cd maigret/
 # ./maigret.py

@@ -230,7 +230,6 @@ docker exec -it -u root kali bash #exec into kali container
 |     [exploitdb](https://gitlab.com/kalilinux/packages/exploitdb)  |    Searchable Exploit Database archive                              |
 |     [hydra](https://www.kali.org/tools/hydra/)                    |    Parallelized login cracker which supports numerous protocols     |
 |     [john](https://www.kali.org/tools/john/)                      |    John The Ripper - Password Cracker                               |
-|     [kube-hunter](https://github.com/aquasecurity/kube-hunter)                  |    Hunts for weakness in K8s cluster/s
 |     [kubernetes-helm](https://www.kali.org/tools/kubernetes-helm/#helm)                  |    Tool for managing Helm charts
 |     [maigret](https://github.com/soxoj/maigret)   |    OSINT    
 |     [mandb](https://man7.org/linux/man-pages/man8/mandb.8.html)   |    Updates man pages                                                |
