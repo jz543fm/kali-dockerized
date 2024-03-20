@@ -221,7 +221,6 @@ docker exec -it -u root kali bash #exec into kali container
 |     [axel](https://www.kali.org/tools/axel/)        |    Accelerate the downloading process by using multiple connections for one file, similar to DownThemAll and other famous programs. It can also use multiple mirrors for one download.          |
 |     [beef-xss](https://beefproject.com)                           |    Browser Exploitation Framework                                   |
 |     [binwalk](https://www.kali.org/tools/binwalk/)                |    Searching a given binary image for embedded files or executable  |
-|     [blackbird](https://github.com/p1ngul1n0/blackbird/)                  |    OSINT
 |     [burpsuite](https://www.kali.org/tools/burpsuite/)            |    Integrated platform for performing security testing of web apps  |
 |     [crackmapexec](https://www.kali.org/tools/crackmapexec/)      |    Swiss army knife for pentesting Windows/Active Directory envs.   |
 |     [cri-tools](https://www.kali.org/tools/cri-tools/)                  |     contains a series of debugging and validation tools for Kubelet CRI, which includes(critest,crictl)                 |

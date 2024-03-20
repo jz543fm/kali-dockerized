@@ -54,10 +54,6 @@ RUN apt -y install python3-pip npm nodejs golang
 
 # GitHub Additional Tools
 
-# Blackbird
-# for usage: blackbird/
-# python blackbird.py
-RUN git clone https://github.com/p1ngul1n0/blackbird; cd blackbird; pwd; pip install -r requirements.txt;
 
 # Maigret
 # for usage: cd maigret/
