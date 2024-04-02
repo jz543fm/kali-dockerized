@@ -74,7 +74,7 @@ RUN curl https://pyenv.run | bash
 ENV PYENV_ROOT /root/.pyenv
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
 
-RUN pyenv install -v 3.7.16; pyenv install -v 3.8.15; pyenv install -v 3.11.7
+RUN pyenv install -v 3.7.16; pyenv install -v 3.8.15
 
 # GitHub Additional Tools
 
