@@ -8,6 +8,10 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 ***If you want to run this project on the Mac, Windows, Windows server please remove from all commands --network host!!!***
 
+Actually I am managing multiple python versions with [pyenv](https://github.com/pyenv/pyenv) in Kali Linux only
+
+I'm using Python versions: `3.7.16, 3.8.15` with `pyenv local <version>`, for details check out `kali/Dockerfile_systemd`
+
 ## Docker Hub
 
 There you can find prebuilt `Kali Linux with systemd Docker Image`
@@ -205,13 +209,9 @@ docker exec -it -u root kali bash #exec into kali container
 
 ### TODO
 
-1. Install Starship + add there my [starship.toml](https://github.com/jz543fm/starship-conf)
+## Tools List
 
-## PyEnv + Tools List
-
-Actually I am managing multiple python versions with [pyenv](https://github.com/pyenv/pyenv)
-
-I'm using Python versions: `3.7.16, 3.8.15` with `pyenv local <version>`, for details check out `kali/Dockerfile_systemd`, below is list of tools used in Kali Linux
+Below is list of tools used in Kali Linux
 
  |   Tools in Kali Linux                                             | Usage                                                              
 | ------------------------------------------------------------------|---------------------------------------------------------------------|
