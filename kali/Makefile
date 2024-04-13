@@ -1,6 +1,6 @@
 build:
 
-	DOCKER_BUILDKIT=1 docker build -f Dockerfile_systemd -t kali_s:latest .
+	docker build -f Dockerfile_systemd -t kali_s:latest .
 
 exec:
 
