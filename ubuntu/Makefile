@@ -1,7 +1,7 @@
 build:
 
-	docker build -t ubuntu:latest .
+	docker build -t ubuntu:jammy .
 
 exec:
 
-	docker run -it -u root ubuntu:latest bash
+	docker run -it -u root ubuntu:jammy bash

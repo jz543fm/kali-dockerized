@@ -19,7 +19,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./ubuntu
-    #image: 'ubuntu:latest'
+    #image: 'ubuntu:jammy'
     container_name: ubuntu
     privileged: true
     network_mode: host

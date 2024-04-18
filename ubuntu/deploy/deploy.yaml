@@ -18,7 +18,7 @@ spec:
         app: ubuntu
     spec:
       containers:
-      - image: ubuntu:latest
+      - image: ubuntu:jammy
         name: ubuntu
         imagePullPolicy: Always
         command: ["/bin/sleep", "3650d"]
