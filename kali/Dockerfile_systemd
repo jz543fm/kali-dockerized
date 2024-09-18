@@ -87,6 +87,7 @@ RUN git clone https://github.com/p1ngul1n0/blackbird && cd blackbird && pyenv lo
 RUN git clone https://github.com/soxoj/maigret.git && pyenv local 3.8.15 && pip3 install maigret && cd ../
 
 # Sherlock
+# https://github.com/sherlock-project/sherlock
 RUN pip install sherlock-project
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
