@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:resolute
 
 #https://github.com/moby/moby/issues/27988
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
@@ -9,7 +9,7 @@ WORKDIR /usr
 
 # Install Go
 
-ENV GO_VERSION=1.21.4
+ENV GO_VERSION=1.26.5
 
 RUN curl -sSLO https://go.dev/dl/go$GO_VERSION.linux-amd64.tar.gz; tar -C /usr/local -xzf go$GO_VERSION.linux-amd64.tar.gz; rm -rf go$GO_VERSION.linux-amd64.tar.gz
 

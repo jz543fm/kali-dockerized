@@ -19,7 +19,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./ubuntu
-    #image: 'ubuntu:jammy'
+    #image: 'ubuntu:resolute'
     container_name: ubuntu
     privileged: true
     network_mode: host

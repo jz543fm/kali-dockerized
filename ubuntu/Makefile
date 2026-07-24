@@ -1,7 +1,7 @@
 build:
 
-	docker build -t ubuntu:jammy .
+	docker build -t ubuntu:resolute .
 
 exec:
 
-	docker run -it -u root ubuntu:jammy bash
+	docker run -it -u root ubuntu:resolute bash
