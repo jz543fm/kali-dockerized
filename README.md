@@ -10,7 +10,7 @@ I am using [Official](https://www.kali.org/docs/containers/official-kalilinux-do
 
 Actually I am managing multiple python versions with [pyenv](https://github.com/pyenv/pyenv) in Kali Linux only
 
-I'm using Python versions: `3.7.16, 3.8.15` with `pyenv local <version>`, for details check out `kali/Dockerfile_systemd`
+I'm using Python versions: `3.7.16, 3.8.15`, `3.11.10` with `pyenv local <version>`, for details check out `kali/Dockerfile_systemd`
 
 ## Docker Hub
 
