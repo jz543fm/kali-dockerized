@@ -85,8 +85,12 @@ RUN pyenv install -v 3.7.16 && \
 # Blackbird
 # for usage: blackbird/
 # python blackbird.py
-RUN git clone https://github.com/p1ngul1n0/blackbird && cd blackbird && pyenv local 3.11.10 && python -m pip install -r requirements.txt & cd ../
-
+RUN git clone https://github.com/p1ngul1n0/blackbird && \
+    cd blackbird && \
+    pyenv local 3.11.10 && \
+    python -m pip install -r requirements.txt && \
+    cd ../
+    
 # Maigret
 RUN git clone https://github.com/soxoj/maigret.git && pyenv local 3.8.15 && pip3 install maigret && cd ../
 
