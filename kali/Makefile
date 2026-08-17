@@ -1,16 +1,24 @@
-build:
+DOCKER=sudo docker
 
-	docker build -f Dockerfile_systemd -t kali_s:latest .
+build:
+	$(DOCKER) build -f Dockerfile_systemd -t kali_s:latest .
 
 exec:
+	$(DOCKER) run -dit \
+		--privileged \
+		--name kali-systemd \
+		--workdir /usr \
+		-p 87:8087 \
+		kali_s:latest bash
 
-	docker run -it -p 87:8087 --rm --privileged --workdir /usr --name kali-systemd kali_s:latest bash
+shell:
+	$(DOCKER) exec -it kali-systemd bash
+
+stop:
+	$(DOCKER) stop kali-systemd
 
 tag:
-
-	docker tag kali_s:latest lostcauze7/kali-dockerized:latest
+	$(DOCKER) tag kali_s:latest lostcauze7/kali-dockerized:latest
 
 push:
-
-	docker push lostcauze7/kali-dockerized:latest
-
+	$(DOCKER) push lostcauze7/kali-dockerized:latest
